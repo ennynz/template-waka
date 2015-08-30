@@ -1,14 +1,14 @@
 //COLOR PALETTE
-$color-main: #0061D1;
-$color-secondary: #0092BA;
+$color-main: #4F711A;
+$color-secondary: #BFCE4D;
 $color-dark: #555555;
 $color-light: whitesmoke;
-$color-third: #FFEAB3;
-$color-fourth: #FFC47A;
+$color-third: #E95C41;
+$color-fourth: #752D07;
 
 //TYPOGRAPHY
-@import url(http://fonts.googleapis.com/css?family=Lobster|Arimo:400,700);
-$font-heading: 'Lobster', cursive;
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Arimo:400,700);
+$font-heading: 'Ubuntu', sans-serif;
 $font-body: 'Arimo', sans-serif;
 $font-xlarge: 4rem;
 $font-large: 2rem;

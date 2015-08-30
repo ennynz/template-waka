@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster|Arimo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Arimo:400,700);
 .button-1 {
   padding: .9rem .65rem .65rem .65rem;
   border: 0.18rem solid whitesmoke;
@@ -356,14 +356,14 @@
 
 header {
   width: 80%;
-  height: 10rem;
+  height: 12rem;
   background-image: url(https://images.unsplash.com/photo-1438755582627-221038b62986?q=80&fm=jpg&s=ce1a984f1ac11887a5d5569ebbce53fb); }
 
 nav {
   width: 20%;
   position: fixed;
   right: 0;
-  background-color: green;
+  background-color: #4F711A;
   height: 100vh;
   text-align: center; }
   nav img {
@@ -373,7 +373,7 @@ nav {
 .nav-link {
   padding: 1rem 0; }
   .nav-link:hover {
-    background: #00b300; }
+    background: #6c9a24; }
   .nav-link:active {
     background: whitesmoke; }
   .nav-link a {
@@ -383,21 +383,50 @@ nav {
 .active {
   background: whitesmoke; }
   .active a {
-    color: green; }
+    color: #4F711A; }
 
-.content {
+.container {
   float: left;
   width: 80%;
   background-color: whitesmoke; }
 
+.content {
+  *zoom: 1;
+  width: auto;
+  max-width: 736px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 3rem; }
+  .content:before, .content:after {
+    content: '';
+    display: table; }
+  .content:after {
+    clear: both; }
+
 h1 {
-  font-family: helvetica;
-  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
   padding: 1rem;
   font-weight: 600;
-  color: green; }
+  color: #4F711A; }
 
 p {
-  font-family: helvetica;
+  font-family: "Arimo", sans-serif;
   font-size: .9rem;
-  padding: 1rem; }
+  padding: 1rem;
+  line-height: 1.2rem; }
+
+.separator {
+  height: .5rem;
+  background-color: gainsboro;
+  width: 100%;
+  margin: 3rem 0 2.5rem 0; }
+
+footer {
+  height: 5rem;
+  background-color: #BFCE4D; }

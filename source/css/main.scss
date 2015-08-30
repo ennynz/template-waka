@@ -6,14 +6,14 @@
 
 header {
   width: 80%;
-  height: 10rem;
+  height: 12rem;
   background-image: url(https://images.unsplash.com/photo-1438755582627-221038b62986?q=80&fm=jpg&s=ce1a984f1ac11887a5d5569ebbce53fb);
 }
 nav {
   width: 20%;
   position: fixed;
   right: 0;
-  background-color: green;
+  background-color: $color-main;
   height: 100vh;
   text-align: center;
   img {
@@ -24,36 +24,52 @@ nav {
 .nav-link {
   padding: 1rem 0;
   &:hover {
-    background: lighten(green, 10%);
+    background: lighten($color-main, 10%);
   }
   &:active {
-    background: whitesmoke;
+    background: $color-light;
   }
   a {
     text-decoration: none;
-    color: whitesmoke;
+    color: $color-light;
   }
 }
 .active {
-  background: whitesmoke;
+  background: $color-light;
   a {
-    color: green;
+    color: $color-main;
   }
 }
-.content {
+.container {
   float: left;
   width: 80%;
-  background-color: whitesmoke;
+  background-color: $color-light;
+}
+.content {
+  @include center($small);
+  margin-top: 3rem;
 }
 h1 {
-  font-family: helvetica;
-  font-size: 1.5rem;
+  font-family: $font-heading;
+  text-transform: uppercase;
+  font-size: 2rem;
   padding: 1rem;
   font-weight: 600;
-  color: green;
+  color: $color-main;
 }
 p {
-  font-family: helvetica;
+  font-family: $font-body;
   font-size: .9rem;
   padding: 1rem;
+  line-height: 1.2rem;
+}
+.separator {
+  height: .5rem;
+  background-color: darken($color-light, 10%);
+  width: 100%;
+  margin: 3rem 0 2.5rem 0;
+}
+footer {
+  height: 5rem;
+  background-color: $color-secondary;
 }
