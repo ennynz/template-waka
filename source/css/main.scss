@@ -4,11 +4,14 @@
 @import 'vendor/breakpoint/breakpoint';
 @import 'columns';
 
+//HEADER
 header {
   width: 80%;
   height: 12rem;
   background-image: url(https://images.unsplash.com/photo-1438755582627-221038b62986?q=80&fm=jpg&s=ce1a984f1ac11887a5d5569ebbce53fb);
 }
+
+//SIDE NAVIGATION
 nav {
   width: 20%;
   position: fixed;
@@ -40,10 +43,20 @@ nav {
     color: $color-main;
   }
 }
+
+//GENERAL
 .container {
   float: left;
   width: 80%;
   background-color: $color-light;
+  li {
+    list-style-type: square;
+    font-family: $font-body;
+    font-size: $font-small;
+    line-height: 1.2rem;
+    padding: .3rem;
+    margin-left: 2rem;
+  }
 }
 .content {
   @include center($small);
@@ -52,16 +65,28 @@ nav {
 h1 {
   font-family: $font-heading;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: $font-large;
   padding: 1rem;
   font-weight: 600;
   color: $color-main;
 }
+h2 {
+  font-family: $font-heading;
+  font-size: $font-large;
+  padding: 2rem 1rem 1rem 1rem;
+  color: lighten($color-dark, 10%)
+}
+h3 {
+  font-family: $font-heading;
+  font-size: $font-medium;
+  padding: 1rem;
+  color: lighten($color-dark, 10%)
+}
 p {
   font-family: $font-body;
-  font-size: .9rem;
+  font-size: $font-medium;
   padding: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 .separator {
   height: .5rem;
@@ -69,6 +94,35 @@ p {
   width: 100%;
   margin: 3rem 0 2.5rem 0;
 }
+
+//NEWS
+.list-news {
+  list-style-type: none !important;
+  margin-left: .8rem !important;
+}
+#news {
+  a {
+    color: $color-third;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 300ms ease;
+    &:hover {
+      color: darken($color-third,20%);
+      font-weight: 600;
+    }
+  }
+}
+//TRUSTEES
+.trustees-description {
+  color: lighten($color-dark, 10%);
+  padding-top: 0;
+}
+.with-description {
+  padding-bottom: .1rem;
+}
+
+
+
 footer {
   height: 5rem;
   background-color: $color-secondary;
