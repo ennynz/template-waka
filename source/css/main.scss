@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'jeet';
+// @include edit ();
+@import 'vendor/breakpoint/breakpoint';
+@import 'columns';
+
+header {
+  width: 80%;
+  height: 10rem;
+  background-image: url(https://images.unsplash.com/photo-1438755582627-221038b62986?q=80&fm=jpg&s=ce1a984f1ac11887a5d5569ebbce53fb);
+}
+nav {
+  width: 20%;
+  position: fixed;
+  right: 0;
+  background-color: green;
+  height: 100vh;
+  text-align: center;
+  img {
+    width: 96%;
+    padding-bottom: 2rem;
+  }
+}
+.nav-link {
+  padding: 1rem 0;
+  &:hover {
+    background: lighten(green, 10%);
+  }
+  &:active {
+    background: whitesmoke;
+  }
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+}
+.active {
+  background: whitesmoke;
+  a {
+    color: green;
+  }
+}
+.content {
+  float: left;
+  width: 80%;
+  background-color: whitesmoke;
+}
+h1 {
+  font-family: helvetica;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 600;
+  color: green;
+}
+p {
+  font-family: helvetica;
+  font-size: .9rem;
+  padding: 1rem;
+}

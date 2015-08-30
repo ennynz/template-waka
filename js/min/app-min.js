@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).scroll(function(){var i=$(window).scrollTop();i>=0?$(".page").each(function(a){$(this).position().top<=i+10&&($(".nav-link.active").removeClass("active"),$(".nav-link").eq(a).addClass("active"))}):$("nav li.active").removeClass("active")}).scroll(),$(function(){$(".box-height").matchHeight()})});
