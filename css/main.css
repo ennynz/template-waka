@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Arimo:400,700);
-@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
 .button-1 {
   padding: .9rem .65rem .65rem .65rem;
   border: 0.18rem solid whitesmoke;
@@ -493,17 +492,15 @@ p {
   clear: both; }
 
 *, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  box-sizing: border-box; }
 
 #timeline {
   width: 90%;
   margin: 30px;
   position: relative;
   padding: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  -webkit-transition: all .4s ease;
+          transition: all .4s ease; }
   #timeline:before {
     content: "";
     width: 3px;
@@ -540,11 +537,10 @@ p {
       background: whitesmoke;
       float: right;
       padding: 20px;
-      -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      -webkit-transition: all .3s ease;
+              transition: all .3s ease; }
       #timeline .timeline-item .timeline-content h2 {
         padding: 15px;
         background: #21885E;

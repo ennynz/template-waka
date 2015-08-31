@@ -132,24 +132,7 @@ p {
   padding-bottom: .1rem;
 }
 
-@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
-
-// Variables
-$bg-body: #f9f9f9;
-
-$red: #ee4d4d;
-$blue: #2b2e48;
-$primary-color: $color-main;
-$secondary-color: $blue;
-
-
-// Typography
-$base-font: helvetica, arial, tahoma, verdana;
-$base-font-title: "Dosis", arial, tahoma, verdana;
-
-$base-font-color: #726f77;
-
-// Timeline
+// TIMELINE
 %clearfix {
 	&:after, &:before {
 		content: '';
@@ -158,26 +141,16 @@ $base-font-color: #726f77;
 		clear: both;
 	}
 }
-
-@mixin prefix($prop, $val) {
-	@each $prefix in '-webkit-', '-moz-', '-ms-', '' {
-		#{$prefix}#{$prop}: $val;
-	}
-}
 *, *:before, *:after {
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 }
-
 #timeline {
 	width: 90%;
   margin: 30px;
 	position: relative;
   padding: 0;
-	@include prefix(transition, all .4s ease);
-
-	&:before {
+  transition: all .4s ease;
+  &:before {
 		content:"";
 		width: 3px;
 		height: 100%;
@@ -186,20 +159,17 @@ $base-font-color: #726f77;
 		top: 0;
 		position: absolute;
 	}
-
-	&:after {
+  &:after {
 		content: "";
 		clear: both;
 		display: table;
 		width: 100%;
 	}
-
-	.timeline-item {
+  .timeline-item {
 		margin-bottom: 50px;
 		position: relative;
 		@extend %clearfix;
-
-		.timeline-icon {
+    .timeline-icon {
 			background: $color-main;
 			width: 50px;
 			height: 50px;
@@ -208,33 +178,30 @@ $base-font-color: #726f77;
 			left: 0;
 			overflow: hidden;
 			margin-left: -23px;
-			@include prefix(border-radius, 50%);
-
-			.fa {
+			border-radius: 50%;
+      .fa {
 				position: relative;
 				top: .6rem;
 				left: .6rem;
         color: $color-light;
 			}
 		}
-
-		.timeline-content {
+    .timeline-content {
 			width: 90%;
 			background: $color-light;
       float: right;
 			padding: 20px;
-			@include prefix(box-shadow, 0 3px 0 rgba(0,0,0,0.1));
-			@include prefix(border-radius, 5px);
-			@include prefix(transition, all .3s ease);
-
-			h2 {
+			box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+			border-radius: 5px;
+			transition: all .3s ease;
+      h2 {
 				padding: 15px;
 				background: $color-main;
         font-size: $font-medium;
 				color: #fff;
 				margin: -20px -20px 0 -20px;
 				font-weight: 300;
-				@include prefix(border-radius, 3px 3px 0 0);
+				border-radius: 3px 3px 0 0;
 			}
       p {
         font-size: $font-small;
@@ -252,11 +219,9 @@ $base-font-color: #726f77;
 				border-left:0;
         border-right: 7px solid $color-main;
 			}
-
-			&.right {
+      &.right {
 				float: right;
-
-				&:before {
+        &:before {
 					content: '';
 					right: 45%;
           margin-left: -6px;
@@ -268,9 +233,6 @@ $base-font-color: #726f77;
 		}
 	}
 }
-
-
-
 
 //COLUMNS - pc = percent
 .col-container {
