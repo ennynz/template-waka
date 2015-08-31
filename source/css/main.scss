@@ -16,7 +16,7 @@ nav {
   width: 20%;
   position: fixed;
   right: 0;
-  background-color: $color-main;
+  background: linear-gradient(120deg, rgba($color-main,1) 0%,rgba(#002400,1) 100%);
   height: 100vh;
   text-align: center;
   img {
@@ -27,7 +27,8 @@ nav {
 .nav-link {
   padding: 1rem 0;
   &:hover {
-    background: lighten($color-main, 10%);
+    background: rgba($color-secondary,.4);
+    color: $color-light;
   }
   &:active {
     background: $color-light;
@@ -125,5 +126,5 @@ p {
 
 footer {
   height: 5rem;
-  background-color: $color-secondary;
+  background: linear-gradient(80deg, rgba($color-main,1) 0%,rgba(#0B451F,1) 100%);
 }
