@@ -66,7 +66,7 @@ nav {
 h1 {
   font-family: $font-heading;
   text-transform: uppercase;
-  font-size: $font-large;
+  font-size: $font-xlarge;
   padding: 1rem;
   font-weight: 600;
   color: $color-main;
@@ -94,6 +94,16 @@ p {
   background-color: darken($color-light, 10%);
   width: 100%;
   margin: 3rem 0 2.5rem 0;
+}
+
+//VERTICAL TEXT
+.vertical-text-about {
+	transform: rotate(-90deg);
+	transform-origin: 115% 120% 0;
+}
+.vertical-text-history {
+	transform: rotate(-90deg);
+	transform-origin: 140% 145% 0;
 }
 
 //NEWS
@@ -127,4 +137,28 @@ p {
 footer {
   height: 5rem;
   background: linear-gradient(80deg, rgba($color-main,1) 0%,rgba(#0B451F,1) 100%);
+}
+
+//COLUMNS - pc = percent
+.col-container {
+  @include center(100%);
+  padding-bottom: 1rem;
+}
+
+.col-2-20pc {
+  @include column(1/5);
+  @include breakpoint($small-max) {
+    @include stack();
+  }
+}
+.col-2-80pc {
+  @include column(4/5);
+  @include breakpoint($small-max) {
+    @include stack();
+  }
+}
+.col-2-50pc {
+  @include column(1/2);
+  @include breakpoint($small-max) {
+  }
 }
