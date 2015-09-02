@@ -1,15 +1,15 @@
 //COLOR PALETTE
 $color-main: #21885E;
 $color-secondary: #002400;
-$color-dark: #555555;
+$color-dark: #666;
 $color-light: whitesmoke;
 $color-third: #E95C41;
 $color-fourth: #752D07;
 
 //TYPOGRAPHY
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Arimo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Lato:300,400,700);
 $font-heading: 'Ubuntu', sans-serif;
-$font-body: 'Arimo', sans-serif;
+$font-body: 'Lato', sans-serif;
 $font-xlarge: 4rem;
 $font-large: 2rem;
 $font-medium: 1rem;
