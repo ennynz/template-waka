@@ -26,9 +26,7 @@ label {
   font-family: $font-body;
   color: $color-dark !important;
 }
-select {
-  font-family: $font-body !important;
-}
+
 //HEADER
 header {
   width: 100%;
@@ -60,6 +58,8 @@ nav {
   }
   li{
     border-bottom: 2px solid rgba(245, 245, 245, 0.16);
+    font-family: $font-heading;
+    color: $color-light;
   }
 }
 .nav-link {
@@ -79,8 +79,10 @@ nav {
 }
 .active {
   background: $color-light;
+  color: $color-dark;
   a {
     color: $color-main;
+
   }
 }
 
@@ -178,7 +180,7 @@ p {
 
 //CONTACT
 .contact-form {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   margin-left: 1rem;
 }
 
@@ -321,10 +323,10 @@ p {
 
 footer {
   height: 5rem;
-  background: linear-gradient(80deg, rgba($color-main,1) 0%,rgba(#0B451F,1) 100%);
+  background: darken($color-light, 15%);
   p {
     font-size: $font-small;
-    color: $color-light;
+    color: $color-dark;
     text-align: center;
     line-height: .2rem;
     padding-bottom: 0;

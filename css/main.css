@@ -7066,9 +7066,6 @@ label {
   font-family: "Lato", sans-serif;
   color: #666 !important; }
 
-select {
-  font-family: "Lato", sans-serif !important; }
-
 header {
   width: 100%;
   margin-right: 20rem;
@@ -7098,7 +7095,9 @@ nav {
     width: 96%;
     padding-bottom: 2rem; }
   nav li {
-    border-bottom: 2px solid rgba(245, 245, 245, 0.16); }
+    border-bottom: 2px solid rgba(245, 245, 245, 0.16);
+    font-family: "Ubuntu", sans-serif;
+    color: whitesmoke; }
 
 .nav-link {
   padding: 1rem 0; }
@@ -7113,7 +7112,8 @@ nav {
     color: whitesmoke; }
 
 .active {
-  background: whitesmoke; }
+  background: whitesmoke;
+  color: #666; }
   .active a {
     color: #21885E; }
 
@@ -7251,7 +7251,7 @@ p {
   padding-bottom: .1rem; }
 
 .contact-form {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   margin-left: 1rem; }
 
 #timeline .timeline-item:after, #timeline .timeline-item:before {
@@ -7468,11 +7468,10 @@ p {
 
 footer {
   height: 5rem;
-  background: -webkit-linear-gradient(10deg, #21885e 0%, #0b451f 100%);
-  background: linear-gradient(80deg, #21885e 0%, #0b451f 100%); }
+  background: #cfcfcf; }
   footer p {
     font-size: 0.85rem;
-    color: whitesmoke;
+    color: #666;
     text-align: center;
     line-height: .2rem;
     padding-bottom: 0; }
