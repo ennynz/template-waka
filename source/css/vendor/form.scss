@@ -7608,3 +7608,13 @@ select.ui.dropdown {
 .ui.dropdown > .default.text, .ui.default.dropdown > .text {
   color: #A19D9D;
 }
+.ui.form {
+  @include breakpoint($small-max) {
+    font-size: $font-xsmall;
+  }
+}
+.ui.button {
+  @include breakpoint($small-max) {
+    font-size: $font-xsmall;
+  }
+}

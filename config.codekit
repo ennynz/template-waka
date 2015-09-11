@@ -20,46 +20,46 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/10399785_101539876533046_2482679_n.jpg": {
-		"fileType": 16384,
+	"\/img\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 61404,
-		"inputAbbreviatedPath": "\/img\/10399785_101539876533046_2482679_n.jpg",
-		"outputAbbreviatedPath": "\/img\/10399785_101539876533046_2482679_n.jpg",
+		"initialSize": 22763,
+		"inputAbbreviatedPath": "\/img\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/img\/apple-touch-icon-precomposed.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/1935660_100360096651024_135729_n.jpg": {
-		"fileType": 16384,
+	"\/img\/favicon.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 95038,
-		"inputAbbreviatedPath": "\/img\/1935660_100360096651024_135729_n.jpg",
-		"outputAbbreviatedPath": "\/img\/1935660_100360096651024_135729_n.jpg",
+		"initialSize": 2050,
+		"inputAbbreviatedPath": "\/img\/favicon.png",
+		"outputAbbreviatedPath": "\/img\/favicon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/header-img.jpg": {
-		"fileType": 16384,
+	"\/img\/waka-white-mobile.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 56523,
-		"inputAbbreviatedPath": "\/img\/header-img.jpg",
-		"outputAbbreviatedPath": "\/img\/header-img.jpg",
+		"initialSize": 37541,
+		"inputAbbreviatedPath": "\/img\/waka-white-mobile.png",
+		"outputAbbreviatedPath": "\/img\/waka-white-mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/ponga-fern.jpg": {
-		"fileType": 16384,
+	"\/img\/waka-white.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 88115,
-		"inputAbbreviatedPath": "\/img\/ponga-fern.jpg",
-		"outputAbbreviatedPath": "\/img\/ponga-fern.jpg",
+		"initialSize": 29000,
+		"inputAbbreviatedPath": "\/img\/waka-white.png",
+		"outputAbbreviatedPath": "\/img\/waka-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -557,7 +557,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Benji",
+"lastSavedByUser": "Enny Benzonelli",
 "manualImportLinks": {
 	},
 "projectAttributes": {
