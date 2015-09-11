@@ -69,9 +69,11 @@ header {
   }
 }
 .offscreen-right {
-  opacity: 0;
-  margin-right: -100%;
-  transition: all 250ms ease;
+  @include breakpoint($medium-max) {
+    opacity: 0;
+    margin-right: -100%;
+    transition: all 250ms ease;
+  }  
 }
 
 

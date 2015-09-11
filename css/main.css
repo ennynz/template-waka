@@ -7108,11 +7108,12 @@ header {
   .hide-for-mobile {
     display: none; } }
 
-.offscreen-right {
-  opacity: 0;
-  margin-right: -100%;
-  -webkit-transition: all 250ms ease;
-          transition: all 250ms ease; }
+@media (max-width: 980px) {
+  .offscreen-right {
+    opacity: 0;
+    margin-right: -100%;
+    -webkit-transition: all 250ms ease;
+            transition: all 250ms ease; } }
 
 nav {
   width: 20rem;
