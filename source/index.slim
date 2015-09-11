@@ -3,6 +3,7 @@ html
   head
     meta charset="utf-8" /
     meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    meta content="He Waka Eke Noa Charitable Trust facilitates and ensures the growth of all forms of the arts in Aotearoa with a particular focus on nurturing youth arts." name="description" /
     title He Waka Eke Noa | Charitable Trust
     link href="css/reset.css" rel="stylesheet" /
     link href="css/main.css" rel="stylesheet" /
@@ -10,23 +11,24 @@ html
     script src="js/min/modernizr.js" 
     script src="js/min/jquery-1.11.3.min.js" 
     script src="js/min/app-min.js" 
+    script src="js/min/smoothscroll.js" type="text/javascript" 
   body
     nav
       h1.logo data-650=("font-size: 1.2rem;") data-90=("font-size: 2rem;") 
-      a data-scroll="home" href="#home" 
+      a.smoothScroll data-scroll="home" href="#home" 
         img src="http://waka.org.nz/images/waka-white.png" /
       ul
-        a data-scroll="about" href='#about' 
+        a.smoothScroll data-scroll="about" href='#about' 
           li.nav-link About
-        a data-scroll="history" href='#history' 
+        a.smoothScroll data-scroll="history" href='#history' 
           li.nav-link History
-        a data-scroll="news" href='#news'
+        a.smoothScroll data-scroll="news" href='#news'
           li.nav-link News
-        a data-scroll="governance" href='#governance' 
+        a.smoothScroll data-scroll="governance" href='#governance' 
           li.nav-link Governance
-        a data-scroll="trustees" href='#trustees'
+        a.smoothScroll data-scroll="trustees" href='#trustees'
           li.nav-link Trustees
-        a data-scroll="contact" href='#contact' 
+        a.smoothScroll data-scroll="contact" href='#contact' 
           li.nav-link Contact us
     header#home
     .container
@@ -51,7 +53,9 @@ html
           p Our links into the arts and events community already has a strong foundation based on existing relationships between the trust director and trustees and their previous experience in these fields. There is also a strong historical link with local government.
       .separator 
       .content#history.page
-        .col-2-80pc.box-height
+        .col-2-20pc-reverse.box-height.col-2-shift-up    
+          h1.vertical-text-history History   
+        .col-2-80pc-reverse.box-height.col-2-shift-down
           p What have we accomplished since we set up in 2002
           //timeline starts
           #timeline
@@ -144,9 +148,7 @@ html
                   | Supported and managed "InterAct Disabled Arts Festival " at Corban Estate.
                 p 
                   | Managed Movies and Music in Parks gigs for Auckland Council.  
-          //timeline ends
-        .col-2-20pc.box-height    
-          h1.vertical-text-history History    
+          //timeline ends 
       .separator 
       .content#news.page  
         .col-2-20pc.box-height
@@ -184,7 +186,9 @@ html
                   |  <br>(Article: Film scoops award)  
       .separator 
       .content#governance.page
-        .col-2-80pc.box-height
+        .col-2-20pc-reverse.box-height   
+          h1.vertical-text-governance Governance  
+        .col-2-80pc-reverse.box-height
           p The Trust Board meets with the Executive Director once a month for financial and business reports. Recommendations are made by the Executive Director as to project direction and day-to-day management. The Trust Board passes resolutions on any major financial decisions and discusses and implements overall strategy and directional objectives.
           p The Executive Director is charged with ensuring effective business management, including financial and employment transparency, as well as business direction and project management and development. All hiring and contracting is done in consultation with the Trust Board at meetings, or where an urgent decision is required, email decisions are made.
           .col-container-governance-icons
@@ -194,8 +198,6 @@ html
               .fa.fa-pencil-square-o.fa-4x
             .col-3-33pc
               .fa.fa-users.fa-4x  
-        .col-2-20pc.box-height    
-          h1.vertical-text-governance Governance   
       .separator 
       .content#trustees.page
         .col-2-20pc.box-height
@@ -219,8 +221,10 @@ html
           h2 Emma Bishop
           p Bio coming soon.
       .separator
-      .content#contact.page 
-        .col-2-80pc.box-height
+      .content#contact.page
+        .col-2-20pc-reverse.box-height    
+          h1.vertical-text-contact Contact&nbsp;Us     
+        .col-2-80pc-reverse.box-height
           p Please complete all fileds, then press submit. 
           form.ui.form.contact-form
             .field
@@ -491,9 +495,7 @@ html
             .field
               label Comments
               textarea rows="5"    
-            button.ui.button type="submit"  Submit
-        .col-2-20pc.box-height    
-          h1.vertical-text-contact Contact&nbsp;Us     
+            button.ui.button type="submit"  Submit 
       footer
         .footer-container
           p &copy; He Waka Eke Noa | Charitable Trust, 2015
