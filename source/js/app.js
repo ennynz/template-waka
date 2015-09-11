@@ -22,8 +22,22 @@ $(document).ready(function() {
     $('.menu-button').toggleClass('hide-for-mobile');
     $('nav').toggleClass('offscreen-right');
   });
-  $('nav').mouseleave(function() {
-      $('nav').toggleClass('offscreen-right');
+
+  // $('nav').mouseleave(function() {
+  //   var menuClosed = $('nav').hasClass('offscreen-right');
+  //   if(menuClosed === false) {
+  //     console.log('left');
+  //     $('nav').addClass('offscreen-right');
+  //     $('.menu-button').removeClass('hide-for-mobile');
+  //   }
+  // });
+
+  $('.container').click(function() {
+    var menuClosed = $('nav').hasClass('offscreen-right');
+    if(menuClosed === false) {
+      $('nav').addClass('offscreen-right');
       $('.menu-button').toggleClass('hide-for-mobile');
+    }
   });
+
 });
