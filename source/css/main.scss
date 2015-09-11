@@ -173,7 +173,7 @@ h1 {
   font-weight: 600;
   color: $color-main;
   @include breakpoint($small-max) {
-    font-size: $font-medium;
+    font-size: $font-large;
   }
 }
 h2 {
@@ -182,7 +182,7 @@ h2 {
   padding: 2rem 1rem 1rem 1rem;
   color: lighten($color-dark, 10%);
   @include breakpoint($small-max) {
-    font-size: $font-small;
+    font-size: $font-medium;
   }
 }
 h3 {
@@ -191,7 +191,7 @@ h3 {
   padding: 1rem;
   color: lighten($color-dark, 10%);
   @include breakpoint($small-max) {
-    font-size: $font-xsmall;
+    font-size: $font-small;
   }
 }
 p {
@@ -200,7 +200,7 @@ p {
   padding: 1rem;
   line-height: 1.6rem;
   @include breakpoint($small-max) {
-    font-size: $font-xsmall;
+    font-size: $font-small;
   }
 }
 .separator {
@@ -378,7 +378,7 @@ p {
       p {
         font-size: $font-small;
         @include breakpoint($small-max) {
-          font-size: $font-xsmall;
+          font-size: $font-small;
         }
       }
 			&:before {
