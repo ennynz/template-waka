@@ -20,6 +20,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4700,
+		"inputAbbreviatedPath": "\/img\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/img\/apple-touch-icon-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/favicon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -27,6 +38,28 @@
 		"initialSize": 2050,
 		"inputAbbreviatedPath": "\/img\/favicon.png",
 		"outputAbbreviatedPath": "\/img\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/waka-white-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6818,
+		"inputAbbreviatedPath": "\/img\/waka-white-mobile.png",
+		"outputAbbreviatedPath": "\/img\/waka-white-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/waka-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32402,
+		"inputAbbreviatedPath": "\/img\/waka-white.png",
+		"outputAbbreviatedPath": "\/img\/waka-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -524,7 +557,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Enny Benzonelli",
+"lastSavedByUser": "Benji",
 "manualImportLinks": {
 	},
 "projectAttributes": {
