@@ -161,9 +161,6 @@
 /**
  * Apply a clearfix to an element.
  */
-* {
-  background: rgba(0, 0, 0, 0.05); }
-
 /*!
  * # Semantic UI 2.0.8 - Transition
  * http://github.com/semantic-org/semantic-ui/
@@ -7073,6 +7070,7 @@ header {
   width: 100%;
   margin-right: 20rem;
   height: 15.6rem;
+  z-index: 300;
   background-image: -webkit-linear-gradient(left, rgba(33, 136, 94, 0.29) 0%, #21885e 77%, #21885e 97%), url(http://benji.herokuapp.com/img/bg2.jpg);
   background-image: linear-gradient(to right, rgba(33, 136, 94, 0.29) 0%, #21885e 77%, #21885e 97%), url(http://benji.herokuapp.com/img/bg2.jpg);
   background-size: cover;
@@ -7085,7 +7083,36 @@ header {
   @media (max-width: 980px) {
     header {
       background-image: -webkit-linear-gradient(left, rgba(33, 136, 94, 0.29) 0%, #21885e 45%, #21885e 65%), url(http://benji.herokuapp.com/img/bg2.jpg);
-      background-image: linear-gradient(to right, rgba(33, 136, 94, 0.29) 0%, #21885e 45%, #21885e 65%), url(http://benji.herokuapp.com/img/bg2.jpg); } }
+      background-image: linear-gradient(to right, rgba(33, 136, 94, 0.29) 0%, #21885e 45%, #21885e 65%), url(http://benji.herokuapp.com/img/bg2.jpg);
+      height: 4rem;
+      position: fixed; } }
+
+.header-logo {
+  display: none; }
+  @media (max-width: 980px) {
+    .header-logo {
+      display: block;
+      padding-left: 2rem;
+      height: 4rem; } }
+
+.menu-button {
+  display: none; }
+  @media (max-width: 980px) {
+    .menu-button {
+      display: block;
+      color: whitesmoke;
+      text-align: right;
+      padding: 1rem 2rem 0 0; } }
+
+@media (max-width: 980px) {
+  .hide-for-mobile {
+    display: none; } }
+
+.offscreen-right {
+  opacity: 0;
+  margin-right: -100%;
+  -webkit-transition: all 250ms ease;
+          transition: all 250ms ease; }
 
 nav {
   width: 20rem;
@@ -7093,7 +7120,8 @@ nav {
   right: 0;
   background: #21885E;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  z-index: 200; }
   nav img {
     width: 96%;
     padding-bottom: 2rem; }
@@ -7103,7 +7131,12 @@ nav {
     color: whitesmoke; }
   @media (max-width: 980px) {
     nav {
-      display: none; } }
+      opacity: 1;
+      -webkit-transition: all 250ms ease;
+              transition: all 250ms ease;
+      padding-top: 2rem; }
+      nav img {
+        display: none; } }
 
 .nav-link {
   padding: 1rem 0; }
@@ -7149,7 +7182,8 @@ nav {
     margin-left: 2rem; }
   @media (max-width: 980px) {
     .container {
-      margin-right: 0rem; } }
+      margin-right: 0rem;
+      padding-top: 3rem; } }
 
 .content {
   *zoom: 1;
@@ -7550,6 +7584,34 @@ p {
   .col-2-50pc:after {
     clear: both; }
   .col-2-50pc:last-child {
+    margin-right: 0%; }
+  @media (max-width: 980px) {
+    .col-2-50pc {
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .col-2-50pc:first-child {
+        margin-left: auto; }
+      .col-2-50pc:last-child {
+        margin-right: auto; } }
+
+.col-2-50pc-header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .col-2-50pc-header:before, .col-2-50pc-header:after {
+    content: '';
+    display: table; }
+  .col-2-50pc-header:after {
+    clear: both; }
+  .col-2-50pc-header:last-child {
     margin-right: 0%; }
 
 .col-3-33pc {

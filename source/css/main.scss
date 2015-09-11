@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'jeet';
-@include edit ();
+// @include edit ();
 @import 'vendor/breakpoint/breakpoint';
 @import 'vendor/form';
 @import 'columns';
@@ -32,6 +32,7 @@ header {
   width: 100%;
   margin-right: 20rem;
   height: 15.6rem;
+  z-index: 300;
   background-image: linear-gradient(to right, rgba(33,136,94,0.29) 0%,rgba($color-main,1) 77%,rgba($color-main,1) 97%), url(http://benji.herokuapp.com/img/bg2.jpg);
   background-size: cover;
   background-position: top left;
@@ -41,8 +42,38 @@ header {
   }
   @include breakpoint($medium-max) {
     background-image: linear-gradient(to right, rgba(33,136,94,0.29) 0%,rgba($color-main,1) 45%,rgba($color-main,1) 65%), url(http://benji.herokuapp.com/img/bg2.jpg);
+    height: 4rem;
+    position: fixed;
   }
 }
+.header-logo {
+  display: none;
+  @include breakpoint($medium-max) {
+    display: block;
+    padding-left: 2rem;
+    height: 4rem;
+  }
+}
+.menu-button {
+  display: none;
+  @include breakpoint($medium-max) {
+    display: block;
+    color: $color-light;
+    text-align: right;
+    padding: 1rem 2rem 0 0;
+  }
+}
+.hide-for-mobile {
+  @include breakpoint($medium-max) {
+    display: none;
+  }
+}
+.offscreen-right {
+  opacity: 0;
+  margin-right: -100%;
+  transition: all 250ms ease;
+}
+
 
 //SIDE NAVIGATION
 nav {
@@ -52,6 +83,7 @@ nav {
   background: $color-main;
   height: 100vh;
   text-align: center;
+  z-index: 200;
   img {
     width: 96%;
     padding-bottom: 2rem;
@@ -62,7 +94,12 @@ nav {
     color: $color-light;
   }
   @include breakpoint($medium-max) {
-    display: none;
+    opacity: 1;
+    transition: all 250ms ease;
+    padding-top: 2rem;
+    img {
+      display: none;
+    }
   }
 }
 .nav-link {
@@ -104,6 +141,7 @@ nav {
   }
   @include breakpoint($medium-max) {
     margin-right: 0rem;
+    padding-top: 3rem;
   }
 }
 .content {
@@ -352,7 +390,11 @@ p {
 .col-2-50pc {
   @include column(1/2);
   @include breakpoint($medium-max) {
+    @include stack();
   }
+}
+.col-2-50pc-header {
+  @include column(1/2);
 }
 .col-3-33pc {
   @include column(1/3);

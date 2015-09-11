@@ -13,7 +13,7 @@ html
     script src="js/min/app-min.js" 
     script src="js/min/smoothscroll.js" type="text/javascript" 
   body
-    nav
+    nav.offscreen-right
       h1.logo data-650=("font-size: 1.2rem;") data-90=("font-size: 2rem;") 
       a.smoothScroll data-scroll="home" href="#home" 
         img src="http://waka.org.nz/images/waka-white.png" /
@@ -31,6 +31,13 @@ html
         a.smoothScroll data-scroll="contact" href='#contact' 
           li.nav-link Contact us
     header#home
+      .col-2-50pc-header
+        img.header-logo src="http://waka.org.nz/images/waka-white.png" /
+      .col-2-50pc-header
+        .menu-button
+          .fa.fa-bars.fa-2x
+        .menu-button.hide-for-mobile
+          .fa.fa-times.fa-2x  
     .container
       .content#about.page
         .col-2-20pc.box-height

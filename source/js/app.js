@@ -17,4 +17,13 @@ $(document).ready(function() {
   $(function() {
     $('.box-height').matchHeight();
   });
+  //toggle menu
+  $('.menu-button, ul').click(function() {
+    $('.menu-button').toggleClass('hide-for-mobile');
+    $('nav').toggleClass('offscreen-right');
+  });
+  $('nav').mouseleave(function() {
+      $('nav').toggleClass('offscreen-right');
+      $('.menu-button').toggleClass('hide-for-mobile');
+  });
 });
