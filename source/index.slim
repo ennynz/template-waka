@@ -240,13 +240,19 @@ html
           h1.vertical-text-contact Contact&nbsp;Us     
         .col-2-80pc-reverse.box-height
           p Please complete all fileds, then press submit. 
-          form.ui.form.contact-form action="//formspree.io/info@webkea.co.nz" method="POST"
+          form#contactform.ui.form.contact-form method="POST"
+            input type="hidden" name="_subject" value="New submission from waka.org.nz!"
+            input type="hidden" name="_next" value="thanks.html"
+            input type="text" name="_gotcha" style="display:none"
             .field
               label First Name
               input name="first-name" placeholder=("First Name") type="text" /
             .field
               label Last Name
               input name="last-name" placeholder=("Last Name") type="text" /
+            .field
+              label E-Mail
+              input name="_replyto" placeholder=("E-Mail") type="text" /  
             .field
               label Address
               textarea rows="3" name="address" type="text"
