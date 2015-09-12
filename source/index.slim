@@ -240,7 +240,7 @@ html
           h1.vertical-text-contact Contact&nbsp;Us     
         .col-2-80pc-reverse.box-height
           p Please complete all fileds, then press submit. 
-          form.ui.form.contact-form
+          form.ui.form.contact-form action="//formspree.io/info@webkea.co.nz" method="POST"
             .field
               label First Name
               input name="first-name" placeholder=("First Name") type="text" /
@@ -249,11 +249,12 @@ html
               input name="last-name" placeholder=("Last Name") type="text" /
             .field
               label Address
-              textarea rows="3"
+              textarea rows="3" name="address" type="text"
             .field
               label Country
-              select.ui.search.dropdown#select
+              select.ui.search.dropdown#select name="country" type="text"
                 option value=""  Select Country
+                option value="NZ"  New Zealand                
                 option value="AF"  Afghanistan
                 option value="AX"  Åland Islands
                 option value="AL"  Albania
@@ -412,7 +413,6 @@ html
                 option value="NP"  Nepal
                 option value="NL"  Netherlands
                 option value="NC"  New Caledonia
-                option value="NZ"  New Zealand
                 option value="NI"  Nicaragua
                 option value="NE"  Niger
                 option value="NG"  Nigeria
@@ -508,8 +508,8 @@ html
               input name="phone" placeholder=("Phone") type="text" /
             .field
               label Comments
-              textarea rows="5"    
-            button.ui.button type="submit"  Submit 
+              textarea rows="5" name="comments" type="text"   
+            button.ui.button type="submit" value="Send"  Submit 
       footer
         .footer-container
           p &copy; He Waka Eke Noa | Charitable Trust, 2015
