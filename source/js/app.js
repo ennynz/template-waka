@@ -43,6 +43,6 @@ $(document).ready(function() {
   //hides email from html to avoid extra spam by using formspree
 
   var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'webkea' + '.' + 'co' + '.' + 'nz');
+    contactform.setAttribute('action', '//formspree.io/' + 'richard' + '@' + 'ugly' + '.' + 'org' + '.' + 'nz');
 
 });
